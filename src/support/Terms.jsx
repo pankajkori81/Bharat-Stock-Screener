@@ -1,6 +1,7 @@
 import React, { useContext } from 'react';
 import { ThemeContext } from '../context/ThemeContext';
 import { FileText, AlertTriangle, Scale, CheckCircle, XCircle, Info } from 'lucide-react';
+import SEO from '../components/SEO';
 
 const Terms = () => {
   const { isDark } = useContext(ThemeContext);
@@ -78,6 +79,21 @@ const Terms = () => {
   ];
 
   return (
+
+    <>
+    
+       
+     <SEO 
+        title="Terms & Conditions"
+        description="Terms and Conditions for using Bharat Stock Screener. Important disclaimer: This is an educational tool, not financial advice. Read our complete terms before using the platform."
+        keywords="terms and conditions, terms of service, disclaimer, legal, investment disclaimer, stock market risks"
+        url="/support/terms-conditions"
+        type="article"
+      />
+      
+  
+
+
     <div className={`min-h-screen ${bgClass} py-12 px-4 transition-colors duration-300`}>
       <div className="max-w-4xl mx-auto">
         {/* Header */}
@@ -232,6 +248,7 @@ const Terms = () => {
         </div>
       </div>
     </div>
+      </>
   );
 };
 
