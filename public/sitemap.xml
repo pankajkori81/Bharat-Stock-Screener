@@ -1,55 +1,39 @@
- <?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  
-  <!-- Homepage -->
   <url>
     <loc>https://bharat-stock-screener.vercel.app/</loc>
-     <lastmod>2025-10-27T00:00:00+00:00</lastmod>
+    <lastmod>2025-10-27</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
-  
-  <!-- About Page -->
   <url>
     <loc>https://bharat-stock-screener.vercel.app/support/about</loc>
-    <lastmod>2025-10-27T00:00:00+00:00</lastmod>
+    <lastmod>2025-10-27</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
-  
-  <!-- Contact Page -->
   <url>
     <loc>https://bharat-stock-screener.vercel.app/pages/contact</loc>
-      <lastmod>2025-10-27T00:00:00+00:00</lastmod>
+    <lastmod>2025-10-27</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
-  
-  <!-- Feedback Page -->
   <url>
     <loc>https://bharat-stock-screener.vercel.app/pages/feedback</loc>
-     <lastmod>2025-10-27T00:00:00+00:00</lastmod>
+    <lastmod>2025-10-27</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
-  
-  <!-- Privacy Policy -->
   <url>
     <loc>https://bharat-stock-screener.vercel.app/support/privacy-policy</loc>
-    <lastmod>2025-10-27T00:00:00+00:00</lastmod>
+    <lastmod>2025-10-27</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.3</priority>
   </url>
-  
-  <!-- Terms & Conditions -->
   <url>
     <loc>https://bharat-stock-screener.vercel.app/support/terms-conditions</loc>
-    <lastmod>2025-10-27T00:00:00+00:00</lastmod>
+    <lastmod>2025-10-27</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.3</priority>
   </url>
-  
-</urlset> 
-
-
-
+</urlset>
