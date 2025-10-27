@@ -3,6 +3,7 @@ import React, { useState, useContext } from 'react';
 import { Mail, Phone, MapPin, Send, Check, AlertCircle } from 'lucide-react';
 import { ThemeContext } from '../context/ThemeContext';
 
+import SEO from '../components/SEO';
 const  ContactPage=()=> {
   const { isDark } = useContext(ThemeContext);
   const [formData, setFormData] = useState({
@@ -58,6 +59,18 @@ const  ContactPage=()=> {
   };
 
   return (
+
+    <>
+    
+     <SEO 
+        title="Contact Us"
+        description="Get in touch with Bharat Stock Screener. Have questions about stock analysis or need support? Contact us via email or phone. We're here to help Indian investors."
+        keywords="contact stock screener, support, help, stock analysis questions, investor support"
+        url="/pages/contact"
+      />
+    
+  
+
     <div className={`min-h-screen ${isDark ? 'bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900' : 'bg-gradient-to-br from-blue-50 via-indigo-50 to-purple-50'} py-12 px-4 transition-colors duration-300`}>
       <div className="max-w-4xl mx-auto">
         <h1 className={`text-4xl font-bold text-center ${isDark ? 'text-white' : 'text-gray-900'} mb-4`}>Get in Touch</h1>
@@ -184,6 +197,7 @@ const  ContactPage=()=> {
         </div>
       </div>
     </div>
+      </>
   );
 }
 
