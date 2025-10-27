@@ -1,6 +1,7 @@
 
 
 import React, { useState, useEffect, useContext } from 'react';
+import SEO from '../components/SEO';
 import { TrendingUp, Shield, DollarSign, BarChart3, Droplets, Award, Moon, Sun, Download, RefreshCw, AlertCircle, History, FileText, Trash2, Upload } from 'lucide-react';
  import StockImg from "/src/assets/bharat-stock-screener.png";
 import { ThemeContext } from '../context/ThemeContext';
@@ -517,6 +518,15 @@ const { isDark } = useContext(ThemeContext);
   
   //  -------------------- //
   return (
+    <>
+
+       <SEO 
+        title="Free Stock Screener for Indian Markets"
+        description="Analyze NSE & BSE stocks using our advanced 20-parameter weighted scoring system. Find potential multibagger stocks with comprehensive fundamental analysis. Free stock screening tool for Indian investors."
+        keywords="stock screener India, NSE stocks, BSE stocks, multibagger stocks, stock analysis, fundamental analysis, Indian stock market, free stock screener, stock calculator, investment tool"
+        url="/"
+      />
+
     <div className={`min-h-screen ${bgClass} transition-colors duration-300 p-3 sm:p-6`}>
       <div className="max-w-7xl mx-auto">
         <div className={`${cardBg} rounded-2xl shadow-lg p-4 sm:p-6 mb-4 sm:mb-6`}>
@@ -867,6 +877,8 @@ const { isDark } = useContext(ThemeContext);
         <div>All rights reserved © {new Date().getFullYear()}</div>
       </div>
     </div>
+
+    </>
   );
 };
 
