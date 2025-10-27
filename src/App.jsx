@@ -14,19 +14,18 @@ const App=()=> {
   return (
     <ThemeProvider>
       <Router>
-        <Header />
+        <Header/>
         <Routes>
-          <Route path="/" element={<HomePage />} />
-          <Route path="/pages/contact" element={<ContactPage />} />
-          <Route path="/pages/feedback" element={<FeedbackPage />} />
-          <Route path="/support/about" element={<AboutPage />} />
-          <Route path="/support/privacy-policy" element={<PrivacyPolicyPage />} />
-          <Route path="/support/terms-conditions" element={<Terms />} />
+          <Route path="/" element={<HomePage/>} />
+          <Route path="/pages/contact" element={<ContactPage/>} />
+          <Route path="/pages/feedback" element={<FeedbackPage/>} />
+          <Route path="/support/about" element={<AboutPage/>} />
+          <Route path="/support/privacy-policy" element={<PrivacyPolicyPage/>} />
+          <Route path="/support/terms-conditions" element={<Terms/>} />
         </Routes>
         <Footer/>
       </Router>
     </ThemeProvider>
   );
 }
-
 export default App;
