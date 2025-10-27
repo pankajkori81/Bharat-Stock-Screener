@@ -4,6 +4,7 @@
 import React, { useState, useContext } from 'react';
 import { Send, Check, AlertCircle } from 'lucide-react';
 import { ThemeContext } from '../context/ThemeContext';
+import SEO from '../components/SEO';
 
  const  FeedbackPage=()=> {
   const { isDark } = useContext(ThemeContext);
@@ -61,6 +62,19 @@ import { ThemeContext } from '../context/ThemeContext';
   };
 
   return (
+
+    <>
+    
+     <SEO 
+        title="Share Your Feedback"
+        description="Help us improve Bharat Stock Screener. Share your feedback, report bugs, or request new features. Your input helps us build better tools for Indian stock market investors."
+        keywords="feedback, suggestions, bug report, feature request, improve stock screener"
+        url="/pages/feedback"
+      />
+    
+
+  
+
     <div className={`min-h-screen ${isDark ? 'bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900' : 'bg-gradient-to-br from-blue-50 via-indigo-50 to-purple-50'} py-12 px-4 transition-colors duration-300`}>
       <div className="max-w-2xl mx-auto">
         <h1 className={`text-4xl font-bold text-center ${isDark ? 'text-white' : 'text-gray-900'} mb-4`}>Share Your Feedback</h1>
@@ -196,6 +210,8 @@ import { ThemeContext } from '../context/ThemeContext';
         </div>
       </div>
     </div>
+
+      </>
   );
 }
 
