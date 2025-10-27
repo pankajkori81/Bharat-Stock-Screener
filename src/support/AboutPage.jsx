@@ -2,6 +2,7 @@ import React, { useContext } from 'react';
 import { ThemeContext } from '../context/ThemeContext';
 import { Target, Users, TrendingUp, Shield, Award, Sparkles } from 'lucide-react';
 import StockImg from "../assets/bharat-stock-screener.png";
+import SEO from '../components/SEO';
 
 const AboutPage = () => {
   const { isDark } = useContext(ThemeContext);
@@ -50,6 +51,18 @@ const AboutPage = () => {
   const borderColor = isDark ? 'border-gray-700' : 'border-gray-200';
 
   return (
+
+    <>
+    
+      <SEO 
+        title="About Us - Stock Analysis Methodology"
+        description="Learn about Bharat Stock Screener's 20-parameter weighted scoring system. Discover how we help Indian investors identify quality stocks through systematic fundamental analysis."
+        keywords="about stock screener, methodology, fundamental analysis, stock scoring, investment strategy, 20 parameters, ROE, ROCE, P/E ratio"
+        url="/support/about"
+      />
+    
+ 
+
     <div className={`min-h-screen ${bgClass} py-12 px-4 transition-colors duration-300`}>
       <div className="max-w-6xl mx-auto">
         {/* Hero Section */}
@@ -204,6 +217,8 @@ const AboutPage = () => {
         </div>
       </div>
     </div>
+
+       </>
   );
 };
 
