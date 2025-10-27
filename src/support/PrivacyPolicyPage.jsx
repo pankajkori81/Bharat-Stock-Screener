@@ -1,6 +1,7 @@
 import React, { useContext } from 'react';
 import { ThemeContext } from '../context/ThemeContext';
 import { Shield, Eye, Lock, Database, Users, Mail } from 'lucide-react';
+import SEO from '../components/SEO';
 
 const PrivacyPolicyPage = () => {
   const { isDark } = useContext(ThemeContext);
@@ -91,6 +92,19 @@ const PrivacyPolicyPage = () => {
   ];
 
   return (
+
+    <>
+    
+       <SEO 
+        title="Privacy Policy"
+        description="Privacy Policy for Bharat Stock Screener. Learn how we collect, use, and protect your data. Your privacy and data security are our top priorities."
+        keywords="privacy policy, data protection, user privacy, data security, GDPR compliance"
+        url="/support/privacy-policy"
+        type="article"
+      />
+    
+
+
     <div className={`min-h-screen ${bgClass} py-12 px-4 transition-colors duration-300`}>
       <div className="max-w-4xl mx-auto">
         {/* Header */}
@@ -224,6 +238,7 @@ const PrivacyPolicyPage = () => {
         </div>
       </div>
     </div>
+        </>
   );
 };
 
