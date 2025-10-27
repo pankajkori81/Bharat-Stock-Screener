@@ -4,7 +4,7 @@ import HomePage from './pages/HomePage';
 import Header from './components/Header';
 import ContactPage from './pages/ContactPage';
 import FeedbackPage from './pages/FeedbackPage';
-import  ThemeProvider from './context/ThemeContext';
+import ThemeProvider from './context/ThemeContext';
 import Footer from './components/Footer';
 import PrivacyPolicyPage from './support/PrivacyPolicyPage';
 import Terms from './support/Terms';
